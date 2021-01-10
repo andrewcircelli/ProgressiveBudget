@@ -21,6 +21,7 @@ const FILES_TO_CACHE = [
 const CACHE_NAME = "static-cache-v1";
 const DATA_CACHE_NAME = "data-cache-v1";
 
+// cache above files for use later
 self.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
@@ -77,7 +78,7 @@ self.addEventListener("fetch", (e) => {
   }
 
   // if the request is not for the API, serve static assets using
-  // "offline-first" approach.
+  // "offline-first" approach
   e.respondWith(
     caches.match(e.request).then((response) => {
       return response || fetch(e.request);
