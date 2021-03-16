@@ -13,7 +13,7 @@ Giving users a fast and easy way to track their money is important, but allowing
 - You are required to submit the following:
 
   - the URL to the deployed application
-    https://budget-tracker-pwa-amc.herokuapp.com/
+    https://andrewcircelli-heroku-budget.herokuapp.com/
 
   - the URL to the Github repository
-    https://github.com/ac08/ProgressiveBudget
+    https://github.com/andrewcircelli/ProgressiveBudget
